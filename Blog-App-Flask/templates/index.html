@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog{% endblock %}
+    {% block content %}
+      {% for post in posts %}
+       <a href="{{ url_for('post', post_id=post['id']) }}" ><h2 class ="badge-secondary rounded py-2 px-2" >{{ post['title'] }}</h2></a>
+      <span class="badge badge-primary mb-4">{{ post['created'] }}</span>
+       <a href="{{ url_for('edit', id=post['id']) }}">
+            <span class="badge badge-warning">Edit</span>
+       </a>
+
+
+    {%  endfor %}
+<!--<div style="margin-top:50px; padding-top:10px;"></div>-->
+{% endblock %}
+
+<!--url_for() renvoie l’URL appropriée pour chaque article en fonction de son ID.-->
+<!--nom de la fonction d’affichage post() et comme elle accepte un argument post_id, vous lui donnez la valeur post['id']-->

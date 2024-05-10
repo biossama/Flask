@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h5 style="color:red; font-style: times new;">You got the : </h5>
+    <h3> {% block title %} {{ post['title'] }} {% endblock %}</h3>
+    <span class="badge badge-primary">{{ post['created'] }}</span>
+    <p class="badge-secondary rounded py-2 px-2 mt-4"><b>{{ post['content'] }}</b></p>
+<!--<div style="margin-top:416px; padding-top:10px;"></div>-->
+{% endblock %}
