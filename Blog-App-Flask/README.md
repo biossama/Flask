@@ -28,21 +28,25 @@ git clone https://github.com/biossama/flask-blog.git
 ##### Navigate to the project directory:
 
 ```bash
-cd flask-blog
+cd Flaks/Blog-App-Flask/
 ```
 
 ##### Create a virtual environment:
 
 ```bash
-python3 -m venv venv
+python3 -m venv .my_env
 ```
 
 ##### Activate the virtual environment:
 
 ```bash
-source venv/bin/activate
+source .my_env/bin/activate
 ```
 
+for windows :
+```powershell
+.my_env/Scripts/activate.bat
+```
 ##### Install dependencies:
 
 ```bash
