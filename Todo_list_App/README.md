@@ -7,14 +7,14 @@ This is a simple Flask application for managing todo tasks. Users can add, delet
 ##### Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/biossama/Flask.git
 ```
 
 ##### Navigate to the project directory:
 
 
 ```bash
-cd flask-todo-app
+cd Flask/Todo-List_App
 ```
 
 ##### Install dependencies using [pip](https://pip.pypa.io/en/stable/):
